@@ -1,8 +1,8 @@
 #include <iostream>
-#include "../libs/httplib.h"
-#include "handler/FileReader.h"
-#include "../libs/map.h"
-#include "../libs/handler/command.h"
+#include "httplib.h"
+#include "FileReader.h"
+#include "map.h"
+#include "command.h"
 
 using namespace std;
 
