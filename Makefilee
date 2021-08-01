@@ -1,0 +1,12 @@
+CC = g++ -std=c++14
+CPPFLAGS = -I.
+
+
+%.o: $(SRC_DIR)/%.cpp
+	$(CC) $< -o $@ $(CPPFLAGS)
+
+server: server.o
+	$(CC) $@.cpp -o server $@.o $(CPPFLAGS) -lpthread
+
+client: client.o
+	$(CC) $@.cpp -o client $@.o $(CPPFLAGS)
